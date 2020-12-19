@@ -2,35 +2,60 @@
     <head>
         <title>Table HTML Program</title>
         <style>
-            table, th, td
+            table
             {
-                border: 2px solid black;
-                border-collapse: collapse
+                /*border: 1px solid black;*/
+                border-collapse: collapse;
+            }
+            th, td{
+                border: 1px  solid black;
+                border-left: 0px ;
             }
             body{
                 margin: 0px 8px;
-            } 
+            }
+            .myDiv{
+                border: 1px solid black;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            .flex-container{
+                display:flex;
+            }
+            .flex{
+                display:grid;
+                margin-left: 20px;
+                width: 75%;
+            }
+
         </style>
     </head>
-    <body >
-        <a>
-            <img style="margin-left: 20%; margin-right: 20%;" src="./fermat_image.jpg" alt="change the image path" width="60%" height="25%">
-        </a>
-        <table style="height: 5%; text-align:left; margin-left: 5%; margin-right: 5%; border-radius: 4px;" >
-            <tr>
-                <td>HOME</td>
-                <td>ABOUT</td>
-                <td>SEARCH</td>
-                <td>EDITOR'S CORNER</td>
-                <td>ARTICLES</td>
-                <td>COMMUNICATIONS</td>
-                <td>FORUM</td>
-                <td>EDUCATION</td>
-                <td>MULTIMEDIA</td>
-                <td>NEWS & VIEWS</td>
-                <td>SUBMISSION GUIDELINES</td>
-                <td>COMMENTS</td>
-        </table>
-        <h2 style="margin-top: 20px; margin-bottom: 0px; margin-left: 20%; font-style:italic;">Welcome to FERMAT</h2><hr>
-    </body>
+    <body>
+        <div class="myDiv">
+            <a title="Link of Home page" href="./college_project1.html">
+                <img src="C:\Users\ayush\Downloads\main-header.jpg" width="100%" >
+            </a>
+            <div class="flex-container">
+                <table style="height: 5%; text-align:left; border-radius: 4px;">
+                    <tr><th><a title="Link of Home page" href="./college_project1.html">HOME</a></th></tr>
+                    <tr><td>ABOUT</td></tr>
+                    <tr><td>SEARCH</td></tr>
+                    <tr><td>EDITOR'S CORNER</td></tr>
+                    <tr><td>ARTICLES</td></tr>
+                    <tr><td>COMMUNICATIONS</td></tr>
+                    <tr><td>FORUM</td></tr>
+                    <tr><td>EDUCATION</td></tr>
+                    <tr><td>MULTIMEDIA</td></tr>
+                    <tr><td>NEWS & VIEWS</td></tr>
+                    <tr><td>SUBMISSION GUIDELINES</td></tr>
+                    <tr><td>COMMENTS</td></tr>
+                </table>
+                <div class="flex">
+                    <h2 style="margin-bottom: 10px; font-style:italic; font-size: 20px; color: rgb(80, 42, 42); border-bottom: solid 1px;">Welcome to FERMAT</h2>
+                    <h4 style="margin: 20px 0px 90% ; font-size: 20px; color: maroon; ">Articles</h4>
+                </div>
+            </div>
+
+        </div>
+        </body>
 </html>
