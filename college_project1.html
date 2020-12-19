@@ -10,6 +10,7 @@
             th, td{
                 border: 1px  solid black;
                 border-left: 0px ;
+                text-indent: 3px;
             }
             body{
                 margin: 0px 8px;
@@ -23,21 +24,21 @@
                 display:flex;
             }
             .flex{
-                display:grid;
+                display: flex;
+                flex-direction: column;
                 margin: 15px;
                 width: 75%;
             }
-
         </style>
     </head>
     <body>
         <div class="myDiv">
-            <a title="Link of Home page" href="./college_project1.html">
+            <a title="Link of Home page" href="./college_project1.html" style="text-decoration: none;">
                 <img src="C:\Users\ayush\Downloads\main-header.jpg" width="100%" >
             </a>
             <div class="flex-container">
-                <table style="height: 5%; text-align:left; border-radius: 4px;">
-                    <tr><th><a title="Link of Home page" href="./college_project1.html">HOME</a></th></tr>
+                <table style="height: 5%; text-align:left; border-radius: 4px; width: 25%; ">
+                    <tr><th><a title="Link of Home page" href="./college_project1.html" style="text-decoration: none;">HOME</a></th></tr>
                     <tr><td>ABOUT</td></tr>
                     <tr><td>SEARCH</td></tr>
                     <tr><td>EDITOR'S CORNER</td></tr>
@@ -52,7 +53,11 @@
                 </table>
                 <div class="flex">
                     <h4 style="font-style:normal; font-size: 18px; color: maroon; border-bottom: solid 1px; margin: 0px;">Welcome to FERMAT</h4>
-                    <h4 style="margin: 20px 0px 90% ; font-size: 20px; color: maroon; ">Articles</h4>
+                    <h4 style="margin: 20px 0px ; font-size: 20px; color: maroon; ">Articles</h4>
+                    <h6 style="margin: 0px 0px 5px 20px;"><a href="https://www.e-fermat.org/articles/dankov-2020-vol41-aug-sep-01">First link</a></h6>
+                    <h6 style="margin: 0px 0px 5px 20px;"><a href="https://www.e-fermat.org/articles/anguera-art-2020-vol40-jul-aug-01">Second link</a></h6>
+                    <h6 style="margin: 0px 0px 5px 20px;"><a href="https://www.e-fermat.org/articles/rengarajan-art-2020-vol39-may-jun-01">Third link</a></h6>
+                    <h6 style="margin: 0px 0px 5px 20px;"><a href="https://www.e-fermat.org/articles/sarkar-art-2019-vol31-jul-aug-01">Fourth link</a></h6>
                 </div>
             </div>
 
